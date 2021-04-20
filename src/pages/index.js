@@ -1,4 +1,5 @@
 import * as React from "react"
+import "../css/style.css"
 
 // styles
 const pageStyles = {
