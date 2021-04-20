@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "watch:sass": "sass src/sass/main.scss src/css/style.css --watch"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
