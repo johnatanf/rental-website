@@ -16,6 +16,8 @@
     "watch:sass": "sass src/sass/main.scss src/css/style.css --watch"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.2.2",
+    "@fontsource/staatliches": "^4.2.3",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^3.2.1",
