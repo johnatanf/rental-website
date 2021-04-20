@@ -27,4 +27,21 @@
         letter-spacing: .1rem;
         margin-top: 1rem;
     }
+
+    &__socials {
+        margin-top: 3rem;
+
+        &-icon {
+            fill: rgba($color-grey-light, .7);
+            width: 5rem;
+            height: 5rem;
+            margin: 0 2rem;
+            cursor: pointer;
+            transition: all .1s;
+
+            &:hover {
+                fill: rgba($color-grey-light, 1);
+            }
+        }
+    }
 }
