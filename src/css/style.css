@@ -23,4 +23,37 @@ body {
   line-height: 1.6;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem;
+  background-color: #333;
+  color: #f7f7f7;
+  text-align: center;
+}
+.footer hr {
+  margin: 1rem 0;
+  border: 1px solid rgba(247, 247, 247, 0.1);
+}
+.footer__copyright {
+  font-size: 1.5rem;
+}
+.footer__copyright a:link, .footer__copyright a:visited {
+  color: #6EBB2D;
+  transition: all 0.1s;
+}
+.footer__copyright a:hover {
+  color: #317312;
+}
+.footer__information {
+  font-size: 1.25rem;
+}
+.footer__information a:link, .footer__information a:visited {
+  color: #6EBB2D;
+  transition: all 0.1s;
+}
+.footer__information a:hover {
+  color: #317312;
+}
+
 /*# sourceMappingURL=style.css.map */
