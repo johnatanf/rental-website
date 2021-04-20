@@ -1,5 +1,6 @@
 @import "~@fontsource/staatliches/index.css";
 @import "~@fontsource/open-sans/index.css";
+@import "~@fontsource/open-sans/300.css";
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +55,34 @@ body {
 }
 .footer__information a:hover {
   color: #317312;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/nature-home.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+.header hr {
+  width: 50%;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+.header__heading {
+  font-family: "Staatliches";
+  color: #f7f7f7;
+  font-size: 8rem;
+  letter-spacing: 0.8rem;
+}
+.header__description {
+  color: #f7f7f7;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
 }
 
 .navbar {
