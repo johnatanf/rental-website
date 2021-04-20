@@ -3,6 +3,10 @@
     background-color: $color-tertiary;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     &__logo {
         text-transform: uppercase;
