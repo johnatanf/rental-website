@@ -56,4 +56,41 @@ body {
   color: #317312;
 }
 
+.navbar {
+  display: flex;
+  background-color: #DED6C9;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  text-transform: uppercase;
+  font-family: "staatliches";
+  font-size: 3rem;
+  margin-left: 2rem;
+  letter-spacing: 0.15rem;
+  color: #333;
+}
+.navbar__group {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-self: stretch;
+}
+.navbar__item {
+  display: flex;
+  transition: all 0.1s;
+}
+.navbar__item a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #333;
+}
+.navbar__item:hover {
+  background-color: #cbbea9;
+}
+
 /*# sourceMappingURL=style.css.map */
