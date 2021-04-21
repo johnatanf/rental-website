@@ -3,8 +3,6 @@ import "../css/style.css"
 import iconSet from "../images/sprite.json"
 import IcomoonReact, { iconList } from "icomoon-react"
 
-console.log('icons: ' + iconList(iconSet))
-
 const Header = () => {
     
     return (

@@ -5,6 +5,7 @@ import CardContainer from "../components/Cards/CardContainer"
 import ContactDetail from "../components/ContactDetail"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import Map from "../components/Map"
 import Navbar from "../components/Navbar"
 import whoWeAreImage from "../images/who-we-are-side.jpg"
 
@@ -52,7 +53,7 @@ const IndexPage = () => {
         <section className="section section--dark section-find-us">
           <h2 className="heading-secondary u-margin-bottom-small">Find us</h2>
           <div className="section-find-us__content">
-            <div id="map" className="map">MAP</div>
+            <Map />
             <div className="section-find-us__details">
               <ContactDetail icon="location" information="Ubud, Bali" />
               <ContactDetail icon="phone" information="(555) 5555 555" />

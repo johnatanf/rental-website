@@ -188,6 +188,11 @@ body {
   fill: #f7f7f7;
 }
 
+.map {
+  height: 45rem;
+  margin: 0 5rem;
+}
+
 .navbar {
   display: flex;
   background-color: #DED6C9;
