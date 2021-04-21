@@ -8,12 +8,10 @@
 
 .card {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     flex: 0 0 30rem;
     background-color: $color-grey-light;
     margin: 2rem;
-    padding: 2rem 4rem;
     text-align: center;
     box-shadow: 0 .25rem .25rem rgba($color-black, .3);
     border-radius: 3px;
@@ -24,10 +22,35 @@
         box-shadow: 0 .5rem .25rem rgba($color-black, .4);
     }
 
+    &__img {
+        height: 20rem;
+        background-size: cover;
+
+        &--hostel {
+            background-image: url('../images/hostel.jpg');
+        }
+
+        &--single {
+            background-image: url('../images/single.jpg');
+        }
+
+        &--double {
+            background-image: url('../images/double.jpg');
+        }
+    }
+
     &__icon {
         width: 7rem;
         height: 7rem;
         margin-bottom: 1rem;
+    }
+
+    &__text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+        flex: 1;
     }
 
     &__heading {

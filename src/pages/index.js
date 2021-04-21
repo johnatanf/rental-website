@@ -6,7 +6,7 @@ import ContactDetail from "../components/ContactDetail"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Navbar from "../components/Navbar"
-import whoWeAreImage from "../images/who-we-are-side.jpg";
+import whoWeAreImage from "../images/who-we-are-side.jpg"
 
 const IndexPage = () => {
   return (
@@ -29,16 +29,19 @@ const IndexPage = () => {
           <h2 className="heading-secondary u-margin-bottom-small">Available rooms</h2>
           <CardContainer>
             <Card 
+              image="hostel"
               url="#" 
               heading="hostel"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
             />
             <Card 
+              image="single"
               url="#"
               heading="single room"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
             <Card 
+              image="double"
               url="#"
               heading="double room"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."

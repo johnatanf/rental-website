@@ -34,12 +34,10 @@ body {
 
 .card {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   flex: 0 0 30rem;
   background-color: #f7f7f7;
   margin: 2rem;
-  padding: 2rem 4rem;
   text-align: center;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
   border-radius: 3px;
@@ -49,10 +47,30 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 0.25rem rgba(0, 0, 0, 0.4);
 }
+.card__img {
+  height: 20rem;
+  background-size: cover;
+}
+.card__img--hostel {
+  background-image: url("../images/hostel.jpg");
+}
+.card__img--single {
+  background-image: url("../images/single.jpg");
+}
+.card__img--double {
+  background-image: url("../images/double.jpg");
+}
 .card__icon {
   width: 7rem;
   height: 7rem;
   margin-bottom: 1rem;
+}
+.card__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  flex: 1;
 }
 .card__heading {
   font-family: "Staatliches";
