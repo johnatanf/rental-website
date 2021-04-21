@@ -18,7 +18,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__item">
                 <a href="#">
-                    Check availability
+                    Book reservation
                 </a>
             </li>
         </ul>
