@@ -79,6 +79,22 @@ body {
   border-radius: 3px;
 }
 
+.contact-detail {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.contact-detail__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #333;
+  margin-right: 1rem;
+}
+.contact-detail__information {
+  font-size: 1.75rem;
+  color: #333;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -215,6 +231,15 @@ body {
 }
 .section-available-rooms {
   background-color: rgba(110, 187, 45, 0.6);
+}
+.section-find-us {
+  background-color: #DED6C9;
+}
+.section-find-us__content {
+  display: flex;
+}
+.section-find-us__content > * {
+  flex: 1;
 }
 .section--light {
   color: #f7f7f7;

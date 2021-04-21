@@ -2,6 +2,7 @@ import * as React from "react"
 import "../css/style.css"
 import Card from "../components/Cards/Card"
 import CardContainer from "../components/Cards/CardContainer"
+import ContactDetail from "../components/ContactDetail"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Navbar from "../components/Navbar"
@@ -43,6 +44,18 @@ const IndexPage = () => {
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
           </CardContainer>
+        </section>
+
+        <section className="section section--dark section-find-us">
+          <h2 className="heading-secondary u-margin-bottom-small">Find us</h2>
+          <div className="section-find-us__content">
+            <div id="map" className="map">MAP</div>
+            <div className="section-find-us__details">
+              <ContactDetail icon="location" information="Ubud, Bali" />
+              <ContactDetail icon="phone" information="(555) 5555 555" />
+              <ContactDetail icon="mail4" information="fakeemail@fakehotel.com" />
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
