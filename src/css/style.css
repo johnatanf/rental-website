@@ -52,13 +52,13 @@ body {
   background-size: cover;
 }
 .card__img--hostel {
-  background-image: url("../images/hostel.jpg");
+  background-image: url("../images/hostel-small.jpg");
 }
 .card__img--single {
-  background-image: url("../images/single.jpg");
+  background-image: url("../images/single-small.jpg");
 }
 .card__img--double {
-  background-image: url("../images/double.jpg");
+  background-image: url("../images/double-small.jpg");
 }
 .card__icon {
   width: 7rem;
