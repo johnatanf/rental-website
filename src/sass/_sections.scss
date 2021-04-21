@@ -1,0 +1,30 @@
+.section {
+    padding: 10rem 5rem;
+
+    &-who-we-are {
+        background-color: $color-tertiary;
+
+        &__content-container {
+            display: flex;
+            margin: 0 5rem;
+        }
+
+        &__paragraph-container {
+            margin-right: 2rem;
+        }
+
+        &__image {
+            margin-left: 2rem;
+            align-self: flex-start;
+            width: 50rem;
+        }
+    }
+
+    &--light {
+        color: $color-grey-light;
+    }
+
+    &--dark {
+        color: $color-grey-dark;
+    }
+}

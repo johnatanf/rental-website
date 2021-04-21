@@ -40,21 +40,21 @@ body {
   font-size: 1.5rem;
 }
 .footer__copyright a:link, .footer__copyright a:visited {
-  color: #6EBB2D;
+  color: rgba(110, 187, 45, 0.7);
   transition: all 0.1s;
 }
 .footer__copyright a:hover {
-  color: #317312;
+  color: #6EBB2D;
 }
 .footer__information {
   font-size: 1.25rem;
 }
 .footer__information a:link, .footer__information a:visited {
-  color: #6EBB2D;
+  color: rgba(110, 187, 45, 0.7);
   transition: all 0.1s;
 }
 .footer__information a:hover {
-  color: #317312;
+  color: #6EBB2D;
 }
 
 .header {
@@ -138,6 +138,59 @@ body {
 }
 .navbar__item:hover {
   background-color: #cbbea9;
+}
+
+.section {
+  padding: 10rem 5rem;
+}
+.section-who-we-are {
+  background-color: #DED6C9;
+}
+.section-who-we-are__content-container {
+  display: flex;
+  margin: 0 5rem;
+}
+.section-who-we-are__paragraph-container {
+  margin-right: 2rem;
+}
+.section-who-we-are__image {
+  margin-left: 2rem;
+  align-self: flex-start;
+  width: 50rem;
+}
+.section--light {
+  color: #f7f7f7;
+}
+.section--dark {
+  color: #333;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.heading-secondary {
+  font-family: "Staatliches";
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+.u-margin-bottom-tiny {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
