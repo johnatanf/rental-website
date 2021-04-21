@@ -1,5 +1,7 @@
 import * as React from "react"
 import "../css/style.css"
+import Card from "../components/Cards/Card"
+import CardContainer from "../components/Cards/CardContainer"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Navbar from "../components/Navbar"
@@ -20,6 +22,27 @@ const IndexPage = () => {
             </div>
             <img className="section-who-we-are__image" src={whoWeAreImage} alt="hotel picture" />
           </div>
+        </section>
+
+        <section className="section section--dark section-available-rooms">
+          <h2 className="heading-secondary u-margin-bottom-small">Available rooms</h2>
+          <CardContainer>
+            <Card 
+              url="#" 
+              heading="hostel"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
+            />
+            <Card 
+              url="#"
+              heading="single room"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            />
+            <Card 
+              url="#"
+              heading="double room"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            />
+          </CardContainer>
         </section>
       </main>
       <Footer />
