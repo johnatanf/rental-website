@@ -7,7 +7,7 @@ const Navbar = () => {
         <p className="navbar__logo">logo</p>
         <ul className="navbar__group">
             <li className="navbar__item">
-                <a href="#">
+                <a href="/">
                     Home
                 </a>
             </li>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 </a>
             </li>
             <li className="navbar__item">
-                <a href="#">
+                <a href="/book-reservation">
                     Book reservation
                 </a>
             </li>

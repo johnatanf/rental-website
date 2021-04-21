@@ -5,7 +5,7 @@ import IcomoonReact, { iconList } from "icomoon-react"
 
 const FormField = props => {
   return (
-    <div className="form__field">
+    <div className={`form__field ${props.half ? 'form__field--half' : ''}`}>
         <label className="form__field-label">{props.label}</label>
         <div className="form__field-input-container">
             <IcomoonReact className="form__field-icon" iconSet={iconSet} icon={props.icon} />

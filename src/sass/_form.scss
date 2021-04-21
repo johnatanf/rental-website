@@ -1,32 +1,39 @@
 .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: $color-primary-dark;
-    color: $color-grey-light;
-    width: 50%;
+    width: 100%;
     max-width: 60rem;
     min-width: 32rem;
     margin: 0 auto;
     padding: 2rem 4rem;
+    color: $color-grey-light;
     border-radius: 3px;
-    box-shadow: 0 .25rem .5rem rgba($color-black, .7);
-
+    box-shadow: 0 .25rem .5rem rgba($color-black, .5);
+    
     &__field {
         display: flex;
         flex-direction: column;
+        flex: 0 0 100%;
 
         &:not(:last-of-type) {
             margin-bottom: 2rem;
         }
 
+        &--half {
+            flex: 0 0 45%;
+        }
+
         &-label {
             font-family: "Staatliches";
             font-size: 2rem;
-            letter-spacing: .2rem;
         }
-
+        
         &-input-container {
             display: flex;
-            align-items: center;
             position: relative;
+            align-items: center;
         }
 
         &-icon {
@@ -34,21 +41,20 @@
             width: 2.5rem;
             height: 2.5rem;
             margin-left: .5rem;
-            fill: rgba($color-black, .3);
+            fill: rgba($color-grey-dark, .5);
         }
 
         &-input {
-            flex: 1;
-            font-family: "Open Sans", sans-serif;
-            font-size: 1.75rem;
             padding: 1rem 1rem 1rem 3.5rem;
-            border: 0;
-
-            &:focus {
-                outline: 3px solid $color-tertiary;
-            }
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.5rem;
+            width: 100%;
         }
+
+        
     }
+
+
 
     &__submit {
         border: 0;

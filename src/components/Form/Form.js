@@ -24,21 +24,25 @@ const Form = () => {
         label="check-in"
         type="date"
         icon="calendar"
+        half={true}
       />
       <FormField 
         label="check-out"
         type="date"
         icon="calendar"
+        half={true}
       />
       <FormField 
         label="number of guests"
         type="number"
         icon="users"
+        half={true}
       />
       <FormField 
         label="number of rooms"
         type="number"
         icon="home"
+        half={true}
       />
       <FormField 
         label="room type"
