@@ -146,6 +146,68 @@ body {
   color: #6EBB2D;
 }
 
+.form {
+  background-color: #317312;
+  color: #f7f7f7;
+  width: 50%;
+  max-width: 60rem;
+  min-width: 32rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  border-radius: 3px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+.form__field:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.form__field-label {
+  font-family: "Staatliches";
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.form__field-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.form__field-icon {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  fill: rgba(0, 0, 0, 0.3);
+}
+.form__field-input {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.75rem;
+  padding: 1rem 1rem 1rem 3.5rem;
+  border: 0;
+}
+.form__field-input:focus {
+  outline: 3px solid #DED6C9;
+}
+.form__submit {
+  border: 0;
+  margin: 3rem 0 1.5rem 0;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  font-size: 2.5rem;
+  border-radius: 3px;
+  background-color: #88d348;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.form__submit:hover {
+  transform: translateY(-3px);
+  background-color: #a2dd71;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -263,6 +325,9 @@ body {
 }
 .section-find-us__content > * {
   flex: 1;
+}
+.section-book-reservation {
+  background-color: rgba(110, 187, 45, 0.6);
 }
 .section--light {
   color: #f7f7f7;

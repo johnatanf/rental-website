@@ -1,0 +1,70 @@
+.form {
+    background-color: $color-primary-dark;
+    color: $color-grey-light;
+    width: 50%;
+    max-width: 60rem;
+    min-width: 32rem;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    border-radius: 3px;
+    box-shadow: 0 .25rem .5rem rgba($color-black, .7);
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &-label {
+            font-family: "Staatliches";
+            font-size: 2rem;
+            letter-spacing: .2rem;
+        }
+
+        &-input-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        &-icon {
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-left: .5rem;
+            fill: rgba($color-black, .3);
+        }
+
+        &-input {
+            flex: 1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.75rem;
+            padding: 1rem 1rem 1rem 3.5rem;
+            border: 0;
+
+            &:focus {
+                outline: 3px solid $color-tertiary;
+            }
+        }
+    }
+
+    &__submit {
+        border: 0;
+        margin: 3rem 0 1.5rem 0;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-family: "Staatliches", sans-serif;
+        font-size: 2.5rem;
+        border-radius: 3px;
+        background-color: lighten($color-primary, 10%);
+        cursor: pointer;
+        transition: all .1s;
+
+        &:hover {
+            transform: translateY(-3px);
+            background-color: lighten($color-primary, 20%);
+        }
+    }
+}
