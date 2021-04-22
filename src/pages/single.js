@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar"
 import Room from "../templates/room"
 import singleImage from "../images/single.jpg"
 
-const Hostel = ({ data }) => {
+const Single = ({ data }) => {
   
     return (
     <>
@@ -31,7 +31,7 @@ const Hostel = ({ data }) => {
   )
 }
 
-export default Hostel
+export default Single
 
 export const query = graphql`
   query {
