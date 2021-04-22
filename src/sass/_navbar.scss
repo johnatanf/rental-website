@@ -22,11 +22,6 @@
         list-style: none;
         justify-content: flex-end;
         align-self: stretch;
-    }
-
-    &__item {
-        display: flex;
-        transition: all .1s;
 
         a {
             display: flex;
@@ -36,10 +31,11 @@
             text-transform: uppercase;
             font-size: 1.25rem;
             color: $color-grey-dark;
-        }
+            transition: all .1s;
 
-        &:hover {
-            background-color: darken($color-tertiary, 10%);
+            &:hover {
+                background-color: darken($color-tertiary, 10%);
+            }
         }
     }
 }

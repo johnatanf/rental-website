@@ -281,11 +281,7 @@ body {
   justify-content: flex-end;
   align-self: stretch;
 }
-.navbar__item {
-  display: flex;
-  transition: all 0.1s;
-}
-.navbar__item a {
+.navbar__group a {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
@@ -293,8 +289,9 @@ body {
   text-transform: uppercase;
   font-size: 1.25rem;
   color: #333;
+  transition: all 0.1s;
 }
-.navbar__item:hover {
+.navbar__group a:hover {
   background-color: #cbbea9;
 }
 

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import "../css/style.css"
 
 const Navbar = () => {
@@ -6,21 +7,21 @@ const Navbar = () => {
     <nav className="navbar">
         <p className="navbar__logo">logo</p>
         <ul className="navbar__group">
-            <li className="navbar__item">
-                <a href="/">
+            <Link to={'/'}>
+                <li className="navbar__item">
                     Home
-                </a>
-            </li>
-            <li className="navbar__item">
-                <a href="#">
+                </li>
+            </Link>
+            <Link to={'/'}>
+                <li className="navbar__item">
                     Rooms
-                </a>
-            </li>
-            <li className="navbar__item">
-                <a href="/book-reservation">
+                </li>
+            </Link>
+            <Link to={'/book-reservation'}>
+                <li className="navbar__item">
                     Book reservation
-                </a>
-            </li>
+                </li>
+            </Link>
         </ul>
     </nav>
   )
