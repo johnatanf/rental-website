@@ -1,0 +1,23 @@
+.notification {
+    display: flex;
+    align-items: center;
+    background-color: $color-grey-light;
+    width: 100%;
+    max-width: 60rem;
+    min-width: 32rem;
+    margin: 0 auto 3rem auto;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    box-shadow: 0 .25rem .25rem rgba($color-black, .3);
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        fill: $color-primary-light;
+    }
+
+    &__message {
+        font-size: 1.5rem;
+    }
+}

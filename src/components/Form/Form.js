@@ -2,9 +2,19 @@ import * as React from "react"
 import "../../css/style.css"
 import FormField from "./FormField";
 
-const Form = () => {
+const Form = ({ setNotification }) => {
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    setNotification("Thank you, we'll send you a confirmation email soon! Note: Nothing has been submitted, this is just for demo purposes. Thanks for checking out my portfolio!")
+    setTimeout(() => {
+      setNotification(null)
+    }, 10000)
+  }
+
   return (
-    <form class="form">
+    <form class="form" action="#" onSubmit={handleSubmit} >
       <FormField 
         label="name"
         type="text"
