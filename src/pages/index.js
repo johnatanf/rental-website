@@ -37,19 +37,19 @@ const IndexPage = ({ data }) => {
           <CardContainer>
             <Card 
               image="hostel"
-              url="#" 
+              url="/hostel"
               heading="hostel"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
             />
             <Card 
               image="single"
-              url="#"
+              url="/single"
               heading="single room"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
             <Card 
               image="double"
-              url="#"
+              url="/double"
               heading="double room"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />

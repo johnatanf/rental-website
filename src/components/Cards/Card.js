@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import "../../css/style.css"
 import iconSet from "../../images/sprite.json"
 import IcomoonReact, { iconList } from "icomoon-react"
@@ -20,7 +21,7 @@ const Card = props => {
                 <h3 className="card__heading">{props.heading}</h3>
                 <p className="card__description">{props.description}</p>
             </div>
-            { props.url ? <a className="card__button" href={props.url}>View room</a> : null }
+            { props.url ? <Link className="card__button" to={props.url}>View room</Link> : null }
         </div>
     </div>
   )
