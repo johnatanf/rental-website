@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "rental-website",
+    title: "Hotel Name",
   },
   plugins: [
     "gatsby-plugin-sass",

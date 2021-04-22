@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 import "../css/style.css"
 import Card from "../components/Cards/Card"
 import CardContainer from "../components/Cards/CardContainer"
@@ -9,9 +11,13 @@ import Map from "../components/Map"
 import Navbar from "../components/Navbar"
 import whoWeAreImage from "../images/who-we-are-side.jpg"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{ data.site.siteMetadata.title }</title>
+      </Helmet>
       <Navbar />
       <Header />
       <main className="main">
@@ -68,3 +74,13 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
