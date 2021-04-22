@@ -63,7 +63,7 @@ body {
 .card__icon {
   width: 7rem;
   height: 7rem;
-  margin-bottom: 1rem;
+  margin: 2rem auto;
 }
 .card__text-content {
   display: flex;
@@ -74,7 +74,7 @@ body {
 }
 .card__heading {
   font-family: "Staatliches";
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.3rem;
 }
 .card__description {
@@ -317,6 +317,56 @@ body {
   font-size: 1.5rem;
 }
 
+.room__heading {
+  font-family: "Staatliches";
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+.room__content-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.room__image {
+  flex: 0 0 45%;
+  width: 45%;
+  align-self: flex-start;
+}
+.room__paragraph-container {
+  flex: 0 0 45%;
+}
+.room__price {
+  font-size: 2.5rem;
+  text-align: right;
+  margin-top: 3rem;
+  color: #166EF3;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+.room__book-button:link, .room__book-button:visited {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 4rem;
+  font-family: "Staatliches", sans-serif;
+  letter-spacing: 0.2rem;
+  color: #f7f7f7;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  background-color: #6EBB2D;
+  max-width: 30rem;
+  border-radius: 3px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.7);
+  transition: all 0.1s;
+}
+.room__book-button:hover {
+  background-color: #317312;
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+}
+
 .section {
   padding: 10rem 5rem;
 }
@@ -349,6 +399,12 @@ body {
 }
 .section-book-reservation {
   background-color: rgba(110, 187, 45, 0.6);
+}
+.section-room-description {
+  background-color: #f7f7f7;
+}
+.section-room-facilities {
+  background-color: #DED6C9;
 }
 .section--light {
   color: #f7f7f7;
