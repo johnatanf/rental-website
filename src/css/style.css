@@ -1,6 +1,15 @@
 @import "~@fontsource/staatliches/index.css";
 @import "~@fontsource/open-sans/index.css";
 @import "~@fontsource/open-sans/300.css";
+/*
+$bp-very-large: 62.5em; // 1000px 
+$bp-large: 56.25em; // 900px 
+$bp-medium: 50em; // 800px 
+$bp-small: 43.75em;// 700px
+$bp-very-small: 37.5em; // 600px 
+$bp-tiny: 31.25em; // 500px 
+$bp-very-tiny: 25em; // 400px
+*/
 * {
   margin: 0;
   padding: 0;
@@ -428,7 +437,7 @@ body {
 .section-who-we-are__image {
   margin-left: 2rem;
   align-self: flex-start;
-  width: 50rem;
+  width: 50%;
 }
 .section-available-rooms {
   background-color: rgba(110, 187, 45, 0.6);
