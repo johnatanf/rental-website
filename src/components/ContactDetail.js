@@ -1,7 +1,7 @@
 import * as React from "react"
 import "../css/style.css"
 import iconSet from "../images/sprite.json"
-import IcomoonReact, { iconList } from "icomoon-react"
+import IcomoonReact from "icomoon-react"
 
 const ContactDetail = props => {
   return (

@@ -8,7 +8,7 @@ const MAPBOX_TOKEN = "pk.eyJ1Ijoiam9obmF0YW5mIiwiYSI6ImNrbnIza2wxNjBwYjkycG56NHV
 const Map = () => {
     const mapContainerRef = useRef(null)
 
-    const [map, setMap] = useState(null)
+    const [, setMap] = useState(null)
 
     useEffect(() => {
         const map = new mapboxgl.Map({
@@ -19,7 +19,7 @@ const Map = () => {
             zoom: 15,
         })
 
-        const marker = new mapboxgl.Marker()
+        new mapboxgl.Marker()
             .setLngLat([115.26, -8.51])
             .addTo(map);
 

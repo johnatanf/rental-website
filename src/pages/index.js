@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
               <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum, massa nec pharetra bibendum, arcu nisl condimentum nibh, tincidunt lobortis velit turpis et odio. Integer tincidunt ligula tellus, eu laoreet enim hendrerit sit amet. Aenean elementum massa non cursus posuere. Aliquam et pellentesque magna. Nunc et nulla eget eros lobortis faucibus. Etiam elementum nisi sed nunc venenatis dictum. Nulla facilisi. Sed et dui at leo laoreet feugiat sed ac justo.</p>
               <p className="paragraph">Aenean a tellus ultrices, accumsan libero sit amet, elementum odio. Fusce dignissim diam mi, nec faucibus diam eleifend vitae. Aliquam vitae sagittis nunc. Maecenas id est vel neque convallis vehicula.</p>
             </div>
-            <img className="section-who-we-are__image" src={whoWeAreImage} alt="hotel picture" />
+            <img className="section-who-we-are__image" src={whoWeAreImage} alt="" />
           </div>
         </section>
 

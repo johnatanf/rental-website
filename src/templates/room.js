@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../css/style.css"
-import hostelImage from "../images/hostel.jpg"
 import Card from "../components/Cards/Card"
 import CardContainer from "../components/Cards/CardContainer"
 
@@ -11,7 +10,7 @@ const Room = props => {
       <section className="section section--dark section-room-description">
         <h1 className="room__heading">{props.type}</h1>
         <div className="room__content-container">
-          <img className="room__image" src={props.image} />
+          <img className="room__image" src={props.image} alt={`${props.type.toLowerCase()} room`} />
           <div className="room__paragraph-container">
             {props.children}
             <p className="room__price">{`Starting from $${props.price}/night`}</p>

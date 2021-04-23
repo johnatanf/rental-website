@@ -1,7 +1,7 @@
 import * as React from "react"
 import "../css/style.css"
 import iconSet from "../images/sprite.json"
-import IcomoonReact, { iconList } from "icomoon-react"
+import IcomoonReact from "icomoon-react"
 
 const Header = () => {
     
@@ -12,13 +12,13 @@ const Header = () => {
                 <hr />
                 <p className="header__description">Insert description here</p>
                 <div className="header__socials">
-                    <a href="#">
+                    <a href="https://twitter.com" target="_blank" rel="noreferrer">
                         <IcomoonReact className="header__socials-icon" iconSet={iconSet} icon="twitter" />
                     </a>
-                    <a href="#">
+                    <a href="https://facebook.com" target="_blank" rel="noreferrer">
                         <IcomoonReact className="header__socials-icon" iconSet={iconSet} icon="facebook2" />
                     </a>
-                    <a href="#">
+                    <a href="https://instagram.com" target="_blank" rel="noreferrer">
                         <IcomoonReact className="header__socials-icon" iconSet={iconSet} icon="instagram" />
                     </a>
                 </div>
