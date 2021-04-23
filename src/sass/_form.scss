@@ -44,14 +44,21 @@
             fill: rgba($color-grey-dark, .5);
         }
 
-        &-input {
+        &-input, &-dropdown {
             padding: 1rem 1rem 1rem 3.5rem;
             font-family: "Open Sans", sans-serif;
             font-size: 1.5rem;
             width: 100%;
         }
 
-        
+        &-dropdown-item {
+            padding: 1rem 0;
+
+            &:focus {
+                background-color: $color-primary;
+                color: $color-grey-light;
+            }
+        }
     }
 
 

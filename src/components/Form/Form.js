@@ -1,6 +1,7 @@
 import * as React from "react"
 import "../../css/style.css"
-import FormField from "./FormField";
+import FormDropdown from "./FormDropdown"
+import FormField from "./FormField"
 
 const Form = ({ setNotification }) => {
 
@@ -54,9 +55,8 @@ const Form = ({ setNotification }) => {
         icon="home"
         half={true}
       />
-      <FormField 
+      <FormDropdown 
         label="room type"
-        type="text"
         icon="home"
       />
       <button className="form__submit" type="submit">Book reservation</button>

@@ -187,11 +187,18 @@ body {
   margin-left: 0.5rem;
   fill: rgba(51, 51, 51, 0.5);
 }
-.form__field-input {
+.form__field-input, .form__field-dropdown {
   padding: 1rem 1rem 1rem 3.5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   width: 100%;
+}
+.form__field-dropdown-item {
+  padding: 1rem 0;
+}
+.form__field-dropdown-item:focus {
+  background-color: #6EBB2D;
+  color: #f7f7f7;
 }
 .form__submit {
   border: 0;
