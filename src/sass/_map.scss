@@ -1,4 +1,8 @@
 .map {
     height: 45rem;
     margin: 0 5rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0 0 5rem 0;
+    }
 }
