@@ -302,20 +302,31 @@ body {
 .navbar__group a:hover {
   background-color: #cbbea9;
 }
-.navbar__group a:hover > .navbar__item > .navbar__dropdown, .navbar__group a:focus > .navbar__item > .navbar__dropdown {
-  display: block;
-}
 .navbar__item {
   position: relative;
 }
-.navbar__item:focus-within > * {
+.navbar__item--non-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #333;
+  transition: all 0.1s;
+}
+.navbar__item--non-link:hover {
+  background-color: #cbbea9;
+}
+.navbar__item--non-link:hover > .navbar__dropdown, .navbar__item--non-link:focus > .navbar__dropdown {
   display: block;
 }
 .navbar__dropdown {
   display: none;
   position: absolute;
-  left: -2rem;
-  top: 3.25rem;
+  top: 4.8rem;
+  left: 0;
   width: 15rem;
 }
 .navbar__dropdown-item {

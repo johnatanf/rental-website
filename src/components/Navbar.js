@@ -13,12 +13,10 @@ const Navbar = () => {
                     Home
                 </li>
             </Link>
-            <Link to={'/'}>
-                <li className="navbar__item">
-                    Rooms
-                    <NavbarDropdown />
-                </li>
-            </Link>
+            <li className="navbar__item navbar__item--non-link">
+                Rooms
+                <NavbarDropdown />
+            </li>
             <Link to={'/book-reservation'}>
                 <li className="navbar__item">
                     Book reservation
