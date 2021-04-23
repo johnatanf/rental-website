@@ -37,7 +37,8 @@
                 background-color: darken($color-tertiary, 10%);
             }
 
-            &:hover > .navbar__item > .navbar__dropdown {
+            &:hover > .navbar__item > .navbar__dropdown,
+            &:focus > .navbar__item > .navbar__dropdown {
                 display: block; // make dropdown visible 
             }
         }

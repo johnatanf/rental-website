@@ -301,7 +301,7 @@ body {
 .navbar__group a:hover {
   background-color: #cbbea9;
 }
-.navbar__group a:hover > .navbar__item > .navbar__dropdown {
+.navbar__group a:hover > .navbar__item > .navbar__dropdown, .navbar__group a:focus > .navbar__item > .navbar__dropdown {
   display: block;
 }
 .navbar__item {
