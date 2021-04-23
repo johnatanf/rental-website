@@ -1,12 +1,13 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import "../css/style.css"
 
 const NavbarDropdown = () => {
   return (
     <div className="navbar__dropdown">
-        <div className="navbar__dropdown-item">Hostel</div>
-        <div className="navbar__dropdown-item">Single room</div>
-        <div className="navbar__dropdown-item">Double room</div>
+        <Link className="navbar__dropdown-item" to={'/hostel'}>Hostel</Link>
+        <Link className="navbar__dropdown-item" to={'/single'}>Single room</Link>
+        <Link className="navbar__dropdown-item" to={'/double'}>Double room</Link>
     </div>
   )
 }
