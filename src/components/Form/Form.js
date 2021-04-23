@@ -15,7 +15,7 @@ const Form = ({ setNotification }) => {
   }
 
   return (
-    <form class="form" action="#" onSubmit={handleSubmit} >
+    <form className="form" action="#" onSubmit={handleSubmit} >
       <FormField 
         label="name"
         type="text"
