@@ -294,6 +294,30 @@ body {
 .navbar__group a:hover {
   background-color: #cbbea9;
 }
+.navbar__group a:hover > .navbar__item > .navbar__dropdown {
+  display: block;
+}
+.navbar__item {
+  position: relative;
+}
+.navbar__item:focus-within > * {
+  display: block;
+}
+.navbar__dropdown {
+  display: none;
+  position: absolute;
+  left: -2rem;
+  top: 3.25rem;
+  width: 15rem;
+}
+.navbar__dropdown-item {
+  background-color: #DED6C9;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.1s;
+}
+.navbar__dropdown-item:hover {
+  background-color: #cbbea9;
+}
 
 .notification {
   display: flex;

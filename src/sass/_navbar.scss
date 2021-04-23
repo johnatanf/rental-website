@@ -36,6 +36,36 @@
             &:hover {
                 background-color: darken($color-tertiary, 10%);
             }
+
+            &:hover > .navbar__item > .navbar__dropdown {
+                display: block; // make dropdown visible 
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &:focus-within > * {
+            display: block;
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        position: absolute;
+        left: -2rem;
+        top: 3.25rem;
+        width: 15rem;
+
+        &-item {
+            background-color: $color-tertiary;
+            padding: .75rem 1.5rem;
+            transition: all .1s;
+
+            &:hover {
+                background-color: darken($color-tertiary, 10%);
+            }
         }
     }
 }

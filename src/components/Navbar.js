@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../css/style.css"
+import NavbarDropdown from "../components/NavbarDropdown"
 
 const Navbar = () => {
   return (
@@ -15,6 +16,7 @@ const Navbar = () => {
             <Link to={'/'}>
                 <li className="navbar__item">
                     Rooms
+                    <NavbarDropdown />
                 </li>
             </Link>
             <Link to={'/book-reservation'}>
