@@ -6,6 +6,8 @@
     background-size: cover;
     min-height: 100vh;
     text-align: center;
+    position: relative;
+    z-index: -1;
 
     @media only screen and (orientation: landscape) {
         padding: 10rem 5rem;
