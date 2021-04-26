@@ -4,8 +4,12 @@
     justify-content: center;
     background-image: linear-gradient(to right, rgba($color-black, .7), rgba($color-black, .7)), url('../images/nature-home.jpg');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
+
+    @media only screen and (orientation: landscape) {
+        padding: 10rem 5rem;
+    }
 
     hr {
         width: 50%;
@@ -18,6 +22,10 @@
         color: $color-grey-light;
         font-size: 8rem;
         letter-spacing: .8rem;
+
+        @media only screen and (max-width: $bp-tiny) {
+            font-size: 6rem;
+        }
     }
 
     &__description {

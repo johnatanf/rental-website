@@ -1,22 +1,46 @@
 .section {
     padding: 10rem 5rem;
 
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 6rem 2rem;
+    }
+
     &-who-we-are {
         background-color: $color-tertiary;
 
         &__content-container {
             display: flex;
+            align-items: center;
             margin: 0 5rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                flex-direction: column;
+            }
         }
 
         &__paragraph-container {
             margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                order: 2;
+                margin: 0;
+            }
         }
 
         &__image {
             margin-left: 2rem;
-            align-self: flex-start;
-            width: 50%;
+            width: 40%;
+
+            @media only screen and (max-width: $bp-largest) {
+                order: 1;
+                margin: 0;
+                margin-bottom: 5rem;
+                width: 80%;
+            }
+
+            @media only screen and (max-width: $bp-tiny) {
+                width: 100%;
+            }
         }
     }
 
@@ -42,6 +66,10 @@
 
     &-book-reservation {
         background-color: $color-primary-light;
+
+        @media only screen and (max-width: $bp-tiniest) {
+            padding: 6rem 0 0 0;
+        }
     }
 
     &-room-description {

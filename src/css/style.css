@@ -1,14 +1,6 @@
 @import "~@fontsource/staatliches/index.css";
 @import "~@fontsource/open-sans/index.css";
 @import "~@fontsource/open-sans/300.css";
-/*
-$bp-large: 56.25em; // 900px 
-$bp-medium: 50em; // 800px 
-$bp-small: 43.75em;// 700px
-$bp-smallest: 37.5em; // 600px 
-$bp-tiny: 31.25em; // 500px 
-$bp-tiniest: 25em; // 400px
-*/
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +17,16 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 50.25%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -36,7 +38,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -169,6 +171,11 @@ body {
   border-radius: 3px;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
+@media only screen and (max-width: 25em) {
+  .form {
+    padding: 2rem;
+  }
+}
 .form__field {
   display: flex;
   flex-direction: column;
@@ -179,6 +186,11 @@ body {
 }
 .form__field--half {
   flex: 0 0 45%;
+}
+@media only screen and (max-width: 43.75em) {
+  .form__field--half {
+    flex: 0 0 100%;
+  }
 }
 .form__field-label {
   font-family: "Staatliches";
@@ -221,6 +233,11 @@ body {
   cursor: pointer;
   transition: all 0.1s;
 }
+@media only screen and (max-width: 31.25em) {
+  .form__submit {
+    width: 100%;
+  }
+}
 .form__submit:hover {
   transform: translateY(-3px);
   background-color: #a2dd71;
@@ -232,8 +249,13 @@ body {
   justify-content: center;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/nature-home.jpg");
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
+}
+@media only screen and (orientation: landscape) {
+  .header {
+    padding: 10rem 5rem;
+  }
 }
 .header hr {
   width: 50%;
@@ -245,6 +267,11 @@ body {
   color: #f7f7f7;
   font-size: 8rem;
   letter-spacing: 0.8rem;
+}
+@media only screen and (max-width: 31.25em) {
+  .header__heading {
+    font-size: 6rem;
+  }
 }
 .header__description {
   color: #f7f7f7;
@@ -365,6 +392,11 @@ body {
   border-radius: 3px;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
 }
+@media only screen and (max-width: 25em) {
+  .notification {
+    width: 95%;
+  }
+}
 .notification__icon {
   width: 5rem;
   height: 5rem;
@@ -387,13 +419,34 @@ body {
   justify-content: space-around;
   margin-top: 3rem;
 }
+@media only screen and (max-width: 62.5em) {
+  .room__content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .room__image {
   flex: 0 0 45%;
   width: 45%;
   align-self: flex-start;
 }
+@media only screen and (max-width: 62.5em) {
+  .room__image {
+    flex: 0 0 100%;
+    width: 100%;
+    align-self: center;
+    margin: 0 2rem 5rem 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .room__image {
+    margin-bottom: 2rem;
+  }
+}
 .room__paragraph-container {
   flex: 0 0 45%;
+  margin: 0 2rem;
 }
 .room__price {
   font-size: 2.5rem;
@@ -428,20 +481,49 @@ body {
 .section {
   padding: 10rem 5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .section {
+    padding: 6rem 2rem;
+  }
+}
 .section-who-we-are {
   background-color: #DED6C9;
 }
 .section-who-we-are__content-container {
   display: flex;
+  align-items: center;
   margin: 0 5rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .section-who-we-are__content-container {
+    flex-direction: column;
+  }
 }
 .section-who-we-are__paragraph-container {
   margin-right: 2rem;
 }
+@media only screen and (max-width: 62.5em) {
+  .section-who-we-are__paragraph-container {
+    order: 2;
+    margin: 0;
+  }
+}
 .section-who-we-are__image {
   margin-left: 2rem;
-  align-self: flex-start;
-  width: 50%;
+  width: 40%;
+}
+@media only screen and (max-width: 62.5em) {
+  .section-who-we-are__image {
+    order: 1;
+    margin: 0;
+    margin-bottom: 5rem;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .section-who-we-are__image {
+    width: 100%;
+  }
 }
 .section-available-rooms {
   background-color: rgba(110, 187, 45, 0.6);
@@ -462,6 +544,11 @@ body {
 }
 .section-book-reservation {
   background-color: rgba(110, 187, 45, 0.6);
+}
+@media only screen and (max-width: 25em) {
+  .section-book-reservation {
+    padding: 6rem 0 0 0;
+  }
 }
 .section-room-description {
   background-color: #f7f7f7;
@@ -486,6 +573,11 @@ body {
   font-size: 5rem;
   letter-spacing: 0.5rem;
   text-align: center;
+}
+@media only screen and (max-width: 25em) {
+  .heading-secondary {
+    font-size: 4.5rem;
+  }
 }
 
 .u-margin-bottom-tiny {
