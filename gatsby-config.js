@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
+    pathPrefix: "/rental-website",
     title: "Hotel Name",
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
