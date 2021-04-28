@@ -1,6 +1,6 @@
 module.exports = {
+  pathPrefix: "/rental-website",
   siteMetadata: {
-    pathPrefix: "/rental-website",
     title: "Hotel Name",
   },
   plugins: [
