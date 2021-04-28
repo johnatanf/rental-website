@@ -10,4 +10,4 @@ The homepage, reservation page and individual pages for each room type (hostel, 
 Built with [Gatsby](https://www.gatsbyjs.com/).
 
 ## Demo 
-View live demo. (link will be added soon)
+[View live demo.](https://johnatanf.github.io/rental-website/)
